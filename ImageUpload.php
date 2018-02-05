@@ -89,26 +89,3 @@ class ImageUpload  {
 	}
 }
 ?>
-
-<?php
-	if ( isset ( $_POST['submit'] ) )  {
-		$image = new ImageUpload();
-		$image->ValidateImage();
-		$image->UploadImage();
- 	}
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Image Upload</title>
-</head>
-<body>
-	
-	<form method="post" action="<?= $_SERVER['PHP_SELF'] ?>" enctype="multipart/form-data">
-		<label>Select File : </label><br /><br />
-		<input type="file" name="filename" /> <br /> <br />
-		<input type="submit" name="submit" />
-	</form>
-
-</body>
-</html>
