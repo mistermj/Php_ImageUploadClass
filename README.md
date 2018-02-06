@@ -12,3 +12,8 @@ Upload Image calling only two functions
  	}
 ?>
 ```
+
+### Requirements
+
+* Do make a "images" folder in the current working directory * 
+
