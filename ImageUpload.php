@@ -42,7 +42,6 @@ class ImageUpload  {
 	public function ValidateImage ()  {
 		if ( strlen($this->file_name) > 255 || strlen($this->file_name) < 1 )  {
 			$this->message[] .= "Change file name and upload again";
-			$this->is_validated = false;
 			return;
 		}
 		if ( file_exists($this->imagesFolder . $this->file_name) )  {
